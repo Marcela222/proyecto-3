@@ -1,0 +1,17 @@
+sudo apt update
+sudo apt install nginx
+
+
+/*aplicar ajustes al firewall*/
+
+sudo ufw app list
+sudo ufw allow ‘Nginx HTTP’
+sudo ufw status
+
+
+/*configuracion del proxy*/
+cd /etc/nginx/
+conf.d
+sudo nano nodeapp.conf
+
+
